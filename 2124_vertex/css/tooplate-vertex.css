@@ -328,7 +328,13 @@ span, footer {  line-height: 1.8; }
     text-align: right;
 }
 
-/* Gallery */
+/* Catalogo */
+
+
+.imagen-bandas {
+    max-width: 10px;
+    max-height: 10px;
+}
 
 .tm-gallery-container {
     max-width: 1400px;
