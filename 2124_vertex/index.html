@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,7 +64,7 @@
                     <div class="tm-media-body">
                         <h2><a href="#" class="tm-text-primary">Eduardo Pinheiro Monteiro</a></h2>
                         <p class="tm-mb-20 tm-text-small">
-                            Programador front-end do nosso site que trabalhou na estilização do Site
+                            Programador Front-end do nosso site que trabalhou na estilização do Site
                         </p>
                         <span class="tm-text-secondary tm-media-span tm-text-small">
                             22/06/2006
@@ -78,7 +78,7 @@
                     <div class="tm-media-body">
                         <h2><a href="#" class="tm-text-primary">Enrique ribeiro linares</a></h2>
                         <p class="tm-mb-20 tm-text-small">
-                            Programador Full-Stack do nosso site que ajudou na montagem do front e do beck-end</p>
+                            Programador Full-Stack do nosso site que ajudou na montagem do front e do Back-end</p>
                         <span class="tm-text-secondary tm-media-span tm-text-small">
                             20/04/2007
                     </span>
@@ -147,20 +147,21 @@
             <div class="tm-gallery-container">
                 <h2 class="tm-text-primary tm-text-right tm-gallery-header">catalogo bandas</h2> 
                 <div class="tm-gallery tm-mb-80">
+                   
                     <figure class="effect-goliath tm-gallery-item">
-                        <img src="img/gallery/tn/AvengedS.jpg" alt="Image"/>
-                        <figcaption>
-                            <h2>Avenged Sevenfold</h2>
-                            <p>Sobre</p>
-                            <a href="img/gallery/tn/AvengedS.jpg">View more</a>
-                        </figcaption>			
+                        <a href="./test.html">
+                            <img src="img/gallery/tn/AvengedS.jpg" alt="Image"/>
+                        </a>
+                        <a href="./test.html"><h2>Avenged Sevenfold</h2></a>
+                        <a href="./test.html"><p>Sobre</p></a>	
                     </figure>
+
                     <figure class="effect-goliath tm-gallery-item">
                         <img src="img/gallery/tn/BrunoM.jpg" alt="Image"/>
                         <figcaption>
                             <h2>Bruno Mars</h2>
                             <p>Sobre</p>
-                            <a href="img/gallery/tn/BrunoM.jpg">View more</a>
+                            <a href="./img/gallery/tn/BrunoM.jpg">View more</a>
                         </figcaption>			
                     </figure>
                     <figure class="effect-goliath tm-gallery-item">
@@ -395,16 +396,15 @@
         <div id="about" class="tm-section">
             <!-- About left -->
             <div class="tm-section-col tm-content tm-content-small">
-                <h2 class="tm-text-primary">About Us</h2>
+                <h2 class="tm-text-primary">Sobre Nos</h2>
                 <p>
-                    You can find more free templates on Too CSS collections. Please visit Too CSS website to see a great list of HTML CSS templates. Simply type it in Google search.
-                </p>
+                    Nos fazemos parte da turma do 3 ano do ensino medio do senac Bauru, e esse é o Site do nosso projeto do ano
                 <p>
-                    You may help us by spreading a word about our website or make a small contribution by contacting Tooplate directly. That will be very helpful for us. Thank you.
+                    temos o intuito de levar mais cultura para todos e estourar a bolha das culturas musicais e mostrar q a musica é muito mais do que pensamos.
                 </p>
                 <hr class="tm-hr tm-mb-50">                
                 <p class="tm-mb-50">
-                    Quisque luctus feugiat dui eget malesuada. Donec rutrum, nibh vel lobortis placerat, leo enim feugiat arcu, ornare imperdiet urna sem vitae tellus.
+                   Qualquer Probela q encontrar por-favor Contate-nos clicando no botã a baixo.
                 </p>
                 <div class="tm-text-right tm-mb-130">
                     <a href="#contact" class="tm-btn tm-btn-next">Contact Us</a>
@@ -543,6 +543,16 @@
                     }
                 }
             }
+
+            // Captura o parâmetro "image" da URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const imageUrl = urlParams.get('image');
+
+            // Exibe a imagem
+            if (imageUrl) {
+                document.getElementById('image-view').src = imageUrl;
+            }
+
 
             setPagination(1);
             showItems(1);
