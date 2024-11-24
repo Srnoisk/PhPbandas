@@ -420,24 +420,35 @@
             <div class="tm-section-col tm-content tm-content-small">
                 <h2 class="tm-text-primary">Contate-nos</h2>
                 <p>
-                    Caso encontre algum problema aqui é o campo para contato
-                </p> 
-                <form id="contact-form" action="" method="POST" class="tm-contact-form tm-mb-200">
-                    <div class="form-group">
-                        <input type="text" name="Nome" class="form-control rounded-0" placeholder="Nome" required />
+                    <p>Se encontrar algum problema, cadastre-se aqui abaixo:</p>
+                
+                    <!-- Formulário de Cadastro -->
+                    <form id="contact-form" action="banco_dados.php" method="POST" class="tm-contact-form tm-mb-200">
+                        <div class="form-group">
+                            <input type="text" name="nome" class="form-control rounded-0" placeholder="Nome" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="6" name="mensagem" class="form-control rounded-0" placeholder="Mensagem" required></textarea>
+                        </div>
+                        <div class="form-group tm-text-right">
+                            <button type="submit" class="tm-btn">Enviar</button>
+                        </div>
+                    </form>
+                    
+                    <!-- Links de Login e Cadastro -->
+                    <div class="text-center">
+                        <p>Já possui uma conta? <a href="login.php" class="tm-btn">Login</a></p>
+    
                     </div>
-                    <div class="form-group">
-                        <input type="email" name="Email" class="form-control rounded-0" placeholder="Email" required />
-                    </div>
-                    <div class="form-group">
-                        <textarea rows="6" name="Mensagem" class="form-control rounded-0" placeholder="Mensagem" required=></textarea>
-                    </div>
-
-                    <div class="form-group tm-text-right">
-                        <button type="submit" class="tm-btn">Enviar</button>
-                    </div>
-                </form>
-                <footer class="tm-copyright tm-text-small">
+                    
+                    <footer class="tm-copyright tm-text-small">
+                    </footer>
+    
+                    <a href="editar.php?id=<?php echo $linha['id']; ?>" class="tm-btn tm-btn-edit">Editar</a>
+                    <a href="confirmar_exclusao.php" class="tm-btn tm-btn-delete">Excluir</a>
                     Wiki Das Bandas
                 </footer>              
             </div>
