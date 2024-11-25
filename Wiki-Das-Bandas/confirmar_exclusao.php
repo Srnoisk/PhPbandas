@@ -38,9 +38,15 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmar Exclusão</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
+    <link rel="stylesheet" href="css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/tooplate-vertex.css">
 </head>
 <body>
     <div class="container mt-5">
+        
         <h2>Confirmar Exclusão de Dados</h2>
         <div class="alert alert-warning" role="alert">
             <strong>ATENÇÃO!</strong> Você está prestes a excluir permanentemente os dados abaixo.
@@ -59,6 +65,8 @@ try {
             <button type="submit" class="btn btn-danger">Excluir Permanentemente</button>
             <a href="index.html" class="btn btn-secondary">Cancelar</a>
         </form>
+    </br>
+    <a href="./index.html" class="tm-btn" style="display: flex; justify-content: center; align-items: center; width: 80px; height: 50px; padding: 0; margin: 0; text-decoration: none;">voltar</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

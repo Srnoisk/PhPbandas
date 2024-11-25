@@ -47,20 +47,30 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Dados</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
+    <link rel="stylesheet" href="css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/tooplate-vertex.css">
 </head>
 <body>
+
     <div class="container mt-5">
+    <a href="./index.html" class="tm-btn" style="display: flex; justify-content: center; align-items: center; width: 80px; height: 50px; padding: 0; margin: 0; text-decoration: none;">voltar</a>
         <h2 class="text-center">Editar Dados</h2>
         <form method="POST" action="editar.php">
-            <div class="form-group mb-3">
+            <div class="form-group">
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" class="form-control" id="nome" value="<?php echo htmlspecialchars($usuario['nome']); ?>" required>
+                <input type="text" name="nome" class="form-control rounded-0" id="nome" value="<?php echo htmlspecialchars($usuario['nome']); ?>" required>
             </div>
-            <div class="form-group mb-3">
+            <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" name="email" class="form-control" id="email" value="<?php echo htmlspecialchars($usuario['email']); ?>" required>
+                <input type="email" name="email" class="form-control rounded-0" id="email" value="<?php echo htmlspecialchars($usuario['email']); ?>" required>
             </div>
-            <button type="submit" class="btn btn-success w-100">Salvar</button>
+            
+            <div class="form-group tm-text-right">
+                    <button type="submit" class="tm-btn">Salvar</button>
+            </div>
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
